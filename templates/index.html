@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Owl</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Book Owl</h1>
+    </header>
+    <main>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="upload-dropzone">
+                <input type="file" name="file" accept=".pdf" required>
+            </div>
+            <button type="submit">Convert to Audio</button>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <span>Book Owl</span>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Pricing</a>
+                <a href="#">Terms</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
